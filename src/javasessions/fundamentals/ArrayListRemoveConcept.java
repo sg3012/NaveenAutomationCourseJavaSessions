@@ -11,7 +11,8 @@ public class ArrayListRemoveConcept {
 
 		ArrayList<String> empList = new ArrayList<String>(); // Vc= 10, Pc= 0;
 		
-//		System.out.println(empList.get(0)); // IOB, as we haven't filled any value in the list
+//		System.out.println(empList.get(0)); // INDEX OUT OF BOUNDS EXCEPTION (IOB), 
+		                                    // as we haven't filled any value in the list
 		                                    // so the PC is 0
 		System.out.println(empList); // Blank List like this: []
 		empList.add("Shubham"); // 0
