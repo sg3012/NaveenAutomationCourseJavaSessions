@@ -7,7 +7,7 @@ public interface IndianMedical extends WHO, UN {
 	public void dentalServices();
 
 	public void gynoServices();
-	
+
 	public void emergencyServices(); // common method
 
 }

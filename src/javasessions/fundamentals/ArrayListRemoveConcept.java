@@ -9,9 +9,9 @@ public class ArrayListRemoveConcept {
 		// ArrayList is also called Order based collection
 		// as it stores and displays the values in the order they were filled
 
-		ArrayList<String> empList = new ArrayList<String>(); // Vc= 10, Pc= 0;
-		
-//		System.out.println(empList.get(0)); // INDEX OUT OF BOUNDS EXCEPTION (IOB), 
+		ArrayList<String> empList = new ArrayList<>(); // Vc= 10, Pc= 0;
+
+//		System.out.println(empList.get(0)); // INDEX OUT OF BOUNDS EXCEPTION (IOB),
 		                                    // as we haven't filled any value in the list
 		                                    // so the PC is 0
 		System.out.println(empList); // Blank List like this: []
@@ -51,18 +51,18 @@ public class ArrayListRemoveConcept {
 
 //		empList.add(0, "Ravi");
 //		System.out.println(empList); // [Ravi, Shubham, Ashish, Sham, Rado, Rajat, Bharat]
-//		
+//
 //		empList.add("Testing"); // If we add the value without specifying the index
 //		                        // it will always be added at HighestIndex + 1.
 //		                        // Meaning, the size of the list will be increased by one
 //		                        // and the value will be added at the last index.
 //		System.out.println(empList); // [Ravi, Shubham, Ashish, Sham, Rado, Rajat, Bharat, Testing]
 
-//		empList.add(8, "Cypress"); 
+//		empList.add(8, "Cypress");
 //		System.out.println(empList); // Index out Of Bounds Exception (IOB) as the indices
 //		                             // 6 and 7 are still empty and we cannot skip
 //		                             // empty indices in the ArrayList. It always
-//		                             // allocates continuous memory addresses. 
+//		                             // allocates continuous memory addresses.
 //		                             // That is why it is an order based collection.
 
 		// Remove the values by specifying actual value:
@@ -86,30 +86,30 @@ public class ArrayListRemoveConcept {
 		// Remove a duplicate value by passing index:
 		empList.remove(6); // Now, it will remove the value at the specified index
 		System.out.println(empList); // [Shubham, Ashish, Sham, Rajat, Bharat, Testing]
-		
+
 		// Adding null values in an array list:
 		empList.add(null); // adding null values are allowed
 		System.out.println(empList); // [Shubham, Ashish, Sham, Rajat, Bharat, Testing, null]
-		
+
 		// Adding multiple null values:
-		empList.add(null); 
+		empList.add(null);
 		System.out.println(empList); // [Shubham, Ashish, Sham, Rajat, Bharat, Testing, null,null]
-		
-		
+
+
 		// Removing a value which may also be an index in the arraylist:
-		ArrayList<Object> empDataList = new ArrayList<Object>(); //vc=10,pc=0
+		ArrayList<Object> empDataList = new ArrayList<>(); //vc=10,pc=0
 		empDataList.add("Shubham");
 		empDataList.add(2);
 		empDataList.add(65.78);
 		empDataList.add('m');
 		empDataList.add(true);
-		
+
 		empDataList.remove(2); // O/P [Shubham, 2, m, true] it will remove value on index 2
 		                       // because when there is a value in an arrayList
 		                       // which is equal to an index in the list
 		                       // JAVA will always give preference to the index based
-		                       // remove function i.e, remove(int index) by default. 
-		                       // So, in this example it will remove 65.78 instead of value 2. 
+		                       // remove function i.e, remove(int index) by default.
+		                       // So, in this example it will remove 65.78 instead of value 2.
 
 	}
 

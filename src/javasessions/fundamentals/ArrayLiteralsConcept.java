@@ -38,25 +38,25 @@ public class ArrayLiteralsConcept {
 		// we can use array with new keyword when the following conditions are met:
 		// If we don't know the values going to be stored in the array
 		// The size of the values is not much.
-		
+
 		int p[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 		int l = p.length;
 		System.out.println(l); // 10
 //		p[10] = 200; // AIOB
 //		System.out.println(p[10]); // Compiler will not reach at this line
-		
+
 		// double array literal:
 		double d[] = {34.67, 89.76, 12.33};
-		
+
 		// char array literal:
 		char c[] = {'a','b','y'};
-		
+
 		// String array literal:
 		String emp[] = {"Jill", "Robin", "Shubham"};
-		
+
 		// Object array literal:
 		Object studentInfo[] = {"Chirag", 31, 56.88, 'm', "Delhi", "India", true};
-		
+
 		// Printing array literals using toString() method:
 		System.out.println("-------");
 		System.out.println(Arrays.toString(d));
@@ -66,13 +66,13 @@ public class ArrayLiteralsConcept {
 		System.out.println(Arrays.toString(emp));
 		System.out.println("-------");
 		System.out.println(Arrays.toString(studentInfo));
-		
+
 		// Traversing and Printing Array literal using for each loop:
 		System.out.println("-------");
 		for(String e : emp) {
 			System.out.println(e);
 		}
-		
+
 		System.out.println("-------");
 		for(Object e : studentInfo) {
 			System.out.print(e+" ");

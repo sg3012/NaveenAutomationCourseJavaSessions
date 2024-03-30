@@ -139,7 +139,7 @@ public class StringConcatenation {
 		// Ranging from 0-7
 		// JAVA considers all numbers starting with 0 as Octal and when it
 		// finds digits more than 7 the compiler will throw and error
-		
+
 		// byte b3 = 0736; compile time error again even if the digits in the octal number
 		                            // are within the range. This is because after conversion from octal to decimal
 		                            // it will result in 478 which again goes out of range for what byte
@@ -147,42 +147,42 @@ public class StringConcatenation {
 
 		short t = 0736; // 478 (Again O/P is octal converted to decimal and then print to console)
 		System.out.println(t);
-		
+
 		int u = 0765676543;
-		System.out.println(u); 
-		// 0765676543 = (0 × 8⁹) + (7 × 8⁸) + (6 × 8⁷) + (5 × 8⁶) + (6 × 8⁵) + (7 × 8⁴) + 
+		System.out.println(u);
+		// 0765676543 = (0 × 8⁹) + (7 × 8⁸) + (6 × 8⁷) + (5 × 8⁶) + (6 × 8⁵) + (7 × 8⁴) +
 		// (6 × 8³) + (5 × 8²) + (4 × 8¹) + (3 × 8⁰) = 131562851
-		
+
 		byte x1 = 125;
 		byte x2 = 120;
-		byte x3 = (byte) (x1+x2); 
-		
+		byte x3 = (byte) (x1+x2);
+
 		System.out.println(x3);  // -11 (This is because we are forcefully converting the result to byte
         // which is out of range for byte. So, as a result what happens internally
-        // is byte could only store 256 numbers in total (+ve, -ve). 
+        // is byte could only store 256 numbers in total (+ve, -ve).
         // So, it will subtract 256 from 245 (125 + 120) and store -11 in byte).
-		
+
 		// SOME OPTIMIZATION TECHNIQUES:
 		// - If there are some small numbers like age, daysInWeek etc store them in byte unless some calculation is involved
 		     byte age = 10;
 		     byte daysInWeek = 7;
 		// - If there are some calculations involved and the numbers are still in range of byte,
 		// then take the numbers in byte variables and store the result in "int" like below:
-		     
+
 		     // Method1:
 		     byte  u1= 120; // 1 byte
 		     byte  u2= 125; // 1 byte
-		     int u3 = u1 + u2; // 4 bytes 
+		     int u3 = u1 + u2; // 4 bytes
 		     // Total = 6 bytes
-		     
+
 		     // Method2:
 		     int u4 = 120; // 4
 		     int u5 = 125; // 4
 		     int u6 = u4+u5; // 4
-		    // Total = 4 bytes	
+		    // Total = 4 bytes
 		   // So, Method 1 is more optimized then method 2.
-		
-		
+
+
 
 	}
 

@@ -31,13 +31,13 @@ public class LoopsConcept_2 {
 
 //		System.out.println("------------");
 //		do {
-//			System.out.println(s); // Infinite loop, will keep printing print 1 
+//			System.out.println(s); // Infinite loop, will keep printing print 1
 //		}
 //		while(s<=10);
 
 //		System.out.println("------------");
 //		do {
-//			System.out.println(s); 
+//			System.out.println(s);
 //			s++;
 //		}
 //		while(s<=10);
@@ -169,7 +169,7 @@ public class LoopsConcept_2 {
 //				break;
 //				}
 //		}
-		
+
 		System.out.println("------------");
 		for (;;) { // Bye Bye Bye Bye Bye Bye
 			System.out.println("Bye");
@@ -178,23 +178,23 @@ public class LoopsConcept_2 {
 				}
 				count++;
 		}
-		
+
 		System.out.println("------------");
 		int pointer = 0;
 		while(true) { // passing true in any loop condition will generate an infinite loop
-			System.out.println("checking element in the attempt: "+pointer); // We will use infinite loops in Selenium where 
-			                                        // we have to keep on waiting for a certain 
+			System.out.println("checking element in the attempt: "+pointer); // We will use infinite loops in Selenium where
+			                                        // we have to keep on waiting for a certain
 			                                        // element to be available, until a maximum time limit
 	                                                // is reached.
 			if(pointer==10) {
 				System.out.println("Element is displayed....Click on the element");
 				break;
-			}  
+			}
 			pointer++;
-			
-		}	
-		
-		
+
+		}
+
+
 
 	}
 

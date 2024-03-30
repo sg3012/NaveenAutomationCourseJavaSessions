@@ -75,7 +75,7 @@ public class AmazonTest {
 			System.out.println("Plz pass the right browser....");
 			break;
 		}
-		
+
 		driver.findElement("emailID"); // find element: emailID
 		driver.sendKeys(); // Sending Value to element
 		driver.click(); // Clicking on element
@@ -84,13 +84,13 @@ public class AmazonTest {
 		// ADVANTAGES OF TOPCASTING IN INITIALISING BROWSER DRIVER:
 		// We can launch and work with all the browsers using single browser variable.
 		// We can run our test cases in parallel on all the browsers.
-		
+
 		// Therefore, By using approach 2 we remove the 2 issues
 		// discussed above using approach 1. Therefore the answer to the question
 		// that why do we write WebDriver driver = new ChromeDriver();
-		
+
 		// DISADVANTAGES OF TOPCASTING IN INITIALISING BROWSER DRIVER:
-		
+
 		// There may be a disadvantage of Approach 2. That is , if there are
 		// any individual methods in the browser driver classes like chromedriver or firefox
 		// driver etc. then we cannot access individual methods of the implementing child

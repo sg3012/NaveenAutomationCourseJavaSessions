@@ -23,7 +23,7 @@ public class LoginPage { // Login page is one of the most critical pages of the 
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
+
 	public void doLogin() {
 		System.out.println("Login with: "+username+" | "+password);
 	}

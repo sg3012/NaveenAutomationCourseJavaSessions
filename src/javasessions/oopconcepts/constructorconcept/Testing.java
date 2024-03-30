@@ -17,15 +17,15 @@ public class Testing {
 	// is not practical scenario)
 
 	// Create all the public methods as static and access those methods
-	// in the caller /driver/ main methods defined 
+	// in the caller /driver/ main methods defined
 	// outside the private constructor classes as shown below
-	
+
 	// But we will not be able to access the public methods
 	// of the caller class if they are not static
-	// in the calling class as we cannot create object of 
+	// in the calling class as we cannot create object of
 	// the caller due to private constructor
-	
-	
+
+
 
 	private Testing() {
 
@@ -45,7 +45,7 @@ public class Testing {
 
 //	public static void main(String args[]) { // But this approach of creating the main
 //		                                     // method in the same class is not practical
-//		Testing test = new Testing(); 
+//		Testing test = new Testing();
 //	}
 
 }

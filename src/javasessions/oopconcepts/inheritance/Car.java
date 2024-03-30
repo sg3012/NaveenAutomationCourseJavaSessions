@@ -11,7 +11,7 @@ public class Car extends Vehicle {
 //	 But a class couldn't inherit from Siblings (classes have same parent). Not allowed in JAVA.
 //
 //	 A class couldn't inherit properties from child
-//	
+//
 //	 Diamond problem is the one when a child is trying to inherit properties from
 //	 more than one parent. This is called MULTIPLE INHERITANCE which is not
 //	 allowed in JAVA
@@ -68,23 +68,23 @@ public class Car extends Vehicle {
 	private void testing() {
 		System.out.println("Car -- Testing");
 	}
-	
-	// Cannot be overridden but can be inherited as it is final method 
+
+	// Cannot be overridden but can be inherited as it is final method
 	public final void power() {
 		System.out.println("Car -- Power");
 	}
-	
+
 	// STATIC AND FINAL METHOD IN PARENT
 	// Cannot be Overridden but can be inherited as this is static and final both.
 	public static final void ABS() {
 		System.out.println("Car -- ABS");
 	}
-	
+
 	// Encapsulating private method call in public method
 	public void carTesting() {
-		testing();	
+		testing();
 	}
-	
+
 	private static void testing1() {
 		System.out.println("Car -- Testing1");
 	}

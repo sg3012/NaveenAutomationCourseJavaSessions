@@ -1,16 +1,16 @@
 package javasessions.oopconcepts.methods;
 
 public class EmployeeTest {
-	
+
 	// Whenever you write a function in your app, always write the
 	// Acceptance criteria related like below
-	
+
 	// ACC Criteria: Write A Function (WAF)
 	//  I want to calculate the score/marks of my employee
 	// create a function : getEmployeeMarks
 	// input parameters: empName (String)
 	// return : marks (int)
-	
+
 	public int getEmployeeMarks(String empName) {
 		System.out.println("getting employee marks for.." + empName);
 //		int marks = -1;
@@ -34,7 +34,7 @@ public class EmployeeTest {
 			System.out.println("emp name not found for.."+empName);
 			return -1;
 		}
-		
+
 		// Instead of writing one single return at the end we can also
 		// write return statement for corresponding conditions
 		// But writing so many returns in the code block makes it
@@ -44,16 +44,16 @@ public class EmployeeTest {
 	}
 
 	public static void main(String[] args) {
-		
+
 		EmployeeTest emp1 = new EmployeeTest();
 		int marks = emp1.getEmployeeMarks("Abhishek");
 		System.out.println(marks); // getting employee marks for..Abhishek
 		                           // 90
-		
+
 		marks = emp1.getEmployeeMarks("Naveen");
 		System.out.println(marks); // getting employee marks for..Naveen
                                    // 10
-		
+
 		marks = emp1.getEmployeeMarks("Tom");
 		System.out.println(marks); // getting employee marks for..Tom
 		                           // emp name not found for..Tom
@@ -77,7 +77,7 @@ public class EmployeeTest {
 //		                                               // and it's there and got 0 marks it will return 0.
 //
 //		}
-		
+
 		if(marks>=0) {
 			System.out.println("print the marksheet");  // getting employee marks for..Tom
                                                         // emp name not found for..Tom

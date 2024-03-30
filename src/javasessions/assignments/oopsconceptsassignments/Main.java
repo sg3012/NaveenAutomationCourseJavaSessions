@@ -6,22 +6,22 @@ import java.util.Comparator;
 public class Main {
 
 // THIS CLASS DEPICTS THE USE OF COMPARABLE AND COMPARATOR INTERFACES
-	
+
 // The main thing to keep in mind while using these interfaces is
 // Natural ordering meaning whatever the ordering we define
 // inside compareTo and compare methods. This user defined ordering itself.
 // Will be considered natural ordering for that class.
 
-//	 Create a class person with two data members: 
-//	 String name 
-//	 Int age 
-//	 
-//	 Create 3 person objects with following: 
-//	 Mayur 32 
-//	 Prince 33 
-//	 Amit 34 
-//	   
-//	 Sort person object with age 
+//	 Create a class person with two data members:
+//	 String name
+//	 Int age
+//
+//	 Create 3 person objects with following:
+//	 Mayur 32
+//	 Prince 33
+//	 Amit 34
+//
+//	 Sort person object with age
 
 	public static void main(String[] args) {
 
@@ -75,37 +75,37 @@ public class Main {
 //	                                        // compareTo method to compare the class objects
 //	String name;
 //	int age;
-//	
-//	// Constructor needed to initialize the values of 
+//
+//	// Constructor needed to initialize the values of
 //	// name and age when we create an array of this class's
 //	// Objects
-//	
+//
 //	public Person(String name, int age) {
 //		this.name = name;
 //		this.age = age;
 //	}
-//	
+//
 //	public String getName() {
 //		return name;
 //	}
-//	
+//
 //	public int getAge() {
 //		return age;
 //	}
-//	
+//
 //	@Override
 //	public int compareTo(Person person) { // This method does the comparison of all the class objects one by one
 //		                             // automatically.
-//		// return this.age - person.age;  // In this line we are comparing the current object's 
-//		                               // (represented by this.age) age variable value with the 
+//		// return this.age - person.age;  // In this line we are comparing the current object's
+//		                               // (represented by this.age) age variable value with the
 //		                               // next object's (represented by person.age ) age
-//		                               // variable value. 
+//		                               // variable value.
 //		                               // Through this line we achieve ascending order
-//		 return person.age - this.age;  // In this line we are comparing the next object's 
-//        // (represented by person.age ) age variable value with the 
-//        // current object's (represented by this.age) age variable value. 
+//		 return person.age - this.age;  // In this line we are comparing the next object's
+//        // (represented by person.age ) age variable value with the
+//        // current object's (represented by this.age) age variable value.
 //        // Through this line we achieve descending order
-//		
+//
 //	}
 
 class Person{ // This class implements the Comparator interface which has
@@ -113,7 +113,7 @@ class Person{ // This class implements the Comparator interface which has
 	String name;
 	int age;
 
-// Constructor needed to initialize the values of 
+// Constructor needed to initialize the values of
 // name and age when we create an array of this class's
 // Objects
 

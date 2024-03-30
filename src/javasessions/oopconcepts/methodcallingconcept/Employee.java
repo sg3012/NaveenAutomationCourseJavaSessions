@@ -2,13 +2,13 @@ package javasessions.oopconcepts.methodcallingconcept;
 
 public class Employee {
 	// RULES FOR CALLING METHODS IN JAVA INSIDE THE SAME CLASS:
-	
+
 	// No Object reference is needed to call a non-static method (caller method) inside
 	// other non-static method (calling method) because when we create object
 	// of the class to call the calling method inside the main method which is static
 	// in nature, the object will have copies of all the non-static methods inside it
 	// and by calling just the one calling method inside the main class will
-	// activate the calls for caller methods automatically. 
+	// activate the calls for caller methods automatically.
 	// Also, as the object has copies of all the other non-static methods
 	// one non-static method can call other non-static methods
 	// directly inside them. So, only one object reference is required in main
@@ -26,18 +26,18 @@ public class Employee {
 	// But we will mostly use the class name to call the static methods inside any other methods
 
 	// No Object reference is needed to call a static method inside
-	// other non-static method of the same class. But we will mostly use the class 
+	// other non-static method of the same class. But we will mostly use the class
 	// name to call the static methods inside any other methods
-	
+
 	// Because program execution starts from the main method and its static in nature
-	// at least one object reference is required to call any one of the non-static methods 
+	// at least one object reference is required to call any one of the non-static methods
 	// that contain calls to other non-static methods to activate the non-static method
 	// call chain one by one
-	
-	// Because program execution starts from the main method we call the static method 
+
+	// Because program execution starts from the main method we call the static method
 	// that contain calls to other static methods to activate the static method
 	// call chain one by one using the Class Name.
-	
+
 
 	public void m1() {
 		System.out.println("m1 method");
@@ -54,18 +54,18 @@ public class Employee {
 	public void m3() {
 		System.out.println("m3 method");
 	}
-	
-	
+
+
 	public static void t1() {
 		System.out.println("t1 method");
 		t2(); // No problem we can call one static method in other static method directly
 	}
-	
+
 	public static void t2() {
 		System.out.println("t2 method");
 		t3(); // No problem we can call one static method in other static method directly
 	}
-	
+
 	public static void t3() {
 		System.out.println("t3 method");
 		// m1(); // Again error, because m1() is inside object in Heap and
@@ -80,27 +80,27 @@ public class Employee {
 		                               // So, in such situations we will create the objects using
 		                               // CALL BY REFERENCE TECHNIQUE i.e., calling a method
 		                               // by class object reference (See
-		                               // User class to see this technique in 
+		                               // User class to see this technique in
 		                               // methodcallingconcept package)
 		emp.m1();
-		
+
 	}
 
 	public static void main(String[] args) {
 		// To call the same class's non-static method
-		
+
 		Employee e1 = new Employee();
-		e1.m1(); // with just one object ref and one method call 
+		e1.m1(); // with just one object ref and one method call
 		         // we are activating the calls to all the 3 methods
 		         // i.e, m1(), m2(), m3().
-		
+
 		         // O/P : m1 method
 		         // m2 method
 		         // m3 method
 		System.out.println("--------");
-		
-		// To call the different class's non-static method: 
-		
+
+		// To call the different class's non-static method:
+
 //		 b2(); // Error, because b2 is defined in Browser
 	           // and not defined inside Employee. And both the classes
                // have no relation. To call b2() we must create the Object of the browser class.
@@ -110,30 +110,30 @@ public class Employee {
 					  // m1 method
 					  // m2 method
         			  // m3 method
-		
+
 		System.out.println("---------");
-		
+
 		// Calling Static Method of the same class:
-		
+
 		Employee.t1(); // t1 method
 		               // t2 method
 		               // t3 method
-		
+
 		System.out.println("---------");
-		
+
 		// Calling static method of the different class:
-		
+
 		// p1(); // Error, because p1 is defined in Browser
         // and not defined inside Employee. And both the classes
         // have no relation. To call p1() we must use the class name Browser
-		
+
 		Browser.p1(); // p1 method
-		
-		
-		
-		
-		
-	
+
+
+
+
+
+
 
 	}
 

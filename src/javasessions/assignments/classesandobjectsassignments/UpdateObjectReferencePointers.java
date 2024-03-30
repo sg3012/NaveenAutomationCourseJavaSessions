@@ -31,7 +31,7 @@ public class UpdateObjectReferencePointers {
 		System.out.println(u2.name + " " + u2.age + " " + u2.city); // Prashant 40 Bangalore
 		System.out.println(u3.name + " " + u3.age + " " + u3.city); // Satish 33 Mumbai
 		System.out.println(u4.name + " " + u4.age + " " + u4.city); // Harshit 28 Pune
-		
+
 		System.out.println("--------");
 
 		u1 = u2;
@@ -40,7 +40,7 @@ public class UpdateObjectReferencePointers {
 		System.out.println(u2.name + " " + u2.age + " " + u2.city); // Prashant 40 Bangalore
 		System.out.println(u3.name + " " + u3.age + " " + u3.city); // Satish 33 Mumbai
 		System.out.println(u4.name + " " + u4.age + " " + u4.city); // Harshit 28 Pune
-		
+
 		System.out.println("--------");
 
 		u2 = u3;
@@ -49,18 +49,18 @@ public class UpdateObjectReferencePointers {
 		System.out.println(u2.name + " " + u2.age + " " + u2.city); // Satish 33 Mumbai
 		System.out.println(u3.name + " " + u3.age + " " + u3.city); // Satish 33 Mumbai
 		System.out.println(u4.name + " " + u4.age + " " + u4.city); // Harshit 28 Pune
-		
+
 		System.out.println("--------");
-		
+
 		u3 = u4;
 
 		System.out.println(u1.name + " " + u1.age + " " + u1.city); // Prashant 40 Bangalore
 		System.out.println(u2.name + " " + u2.age + " " + u2.city); // Satish 33 Mumbai
 		System.out.println(u3.name + " " + u3.age + " " + u3.city); // Harshit 28 Pune
 		System.out.println(u4.name + " " + u4.age + " " + u4.city); // Harshit 28 Pune
-		
+
 		System.out.println("--------");
-		
+
 		u4 = u1;
 
 		System.out.println(u1.name + " " + u1.age + " " + u1.city); // Prashant 40 Bangalore

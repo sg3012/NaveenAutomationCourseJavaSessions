@@ -7,7 +7,7 @@ public class ArrayListTraversing {
 	public static void main(String[] args) {
 
 		// Integer type of Array List:
-		ArrayList<Integer> marksList = new ArrayList<Integer>(); //vc=10,pc=0
+		ArrayList<Integer> marksList = new ArrayList<>(); //vc=10,pc=0
 		marksList.add(100);
 		marksList.add(200);
 		marksList.add(300);
@@ -26,18 +26,18 @@ public class ArrayListTraversing {
 
 		// Print all the values using loop:
 		// 1. Index based for loop:
-		for (int i = 0; i < marksList.size(); i++) { // 100 200 300 Hii 400 500
-			System.out.println(marksList.get(i));
-			if (marksList.get(i) == 300) {
+		for (Integer element : marksList) { // 100 200 300 Hii 400 500
+			System.out.println(element);
+			if (element == 300) {
 				System.out.println("Hii");
 			}
 		}
 
 		System.out.println("---------");
 
-		for (int i = 0; i < marksList.size(); i++) { // 100 200 300 Hii
-			System.out.println(marksList.get(i));
-			if (marksList.get(i) == 300) {
+		for (Integer element : marksList) { // 100 200 300 Hii
+			System.out.println(element);
+			if (element == 300) {
 				System.out.println("Hii");
 				break;
 			}
@@ -46,9 +46,9 @@ public class ArrayListTraversing {
 		// Another way of comparing values in Array List:
 		System.out.println("---------");
 
-		for (int i = 0; i < marksList.size(); i++) { // 100 200 300 Hii
-			System.out.println(marksList.get(i));
-			if (marksList.get(i).equals(300)) { // We should always use equals method to compare
+		for (Integer element : marksList) { // 100 200 300 Hii
+			System.out.println(element);
+			if (element.equals(300)) { // We should always use equals method to compare
 												// values defined using wrapper classes as class
 												// reference is a non-primitive type and equals() method
 												// always compare memory addresses of Object references or more
@@ -76,7 +76,7 @@ public class ArrayListTraversing {
 
 		// String type of Array List:
 		System.out.println("-----------");
-		ArrayList<String> monthsList = new ArrayList<String>(); //vc=10,pc=0
+		ArrayList<String> monthsList = new ArrayList<>(); //vc=10,pc=0
 		monthsList.add("JAN");
 		monthsList.add("FEB");
 		monthsList.add("MAR");
@@ -87,19 +87,19 @@ public class ArrayListTraversing {
 
 		// Object type of Array List:
 		System.out.println("-----------");
-		ArrayList<Object> empDataList = new ArrayList<Object>(); //vc=10,pc=0
+		ArrayList<Object> empDataList = new ArrayList<>(); //vc=10,pc=0
 		empDataList.add("Shubham");
 		empDataList.add(30);
 		empDataList.add(65.78);
 		empDataList.add('m');
 		empDataList.add(true);
-		
+
 		for(Object e : empDataList) {
 			System.out.println(e); // O/P : Shubham 30 Age is Greater than 20 65.78 m true
 			if(e.equals(30)) {
 				System.out.println("Age is Greater than 20");
 			}
-		} 
+		}
 	}
 
 }

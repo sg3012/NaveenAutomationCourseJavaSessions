@@ -15,24 +15,24 @@ public class Bike {
 	// public access modifier within a class created inside a different
 	// package as some other class(s).
 	// We cannot access a variable/method with private, protected and default access modifiers.
-	
+
 	// So, within a class defined in a different package as
-	// as some other class(s) we can access only 
-	// public variables/methods. No access is given 
+	// as some other class(s) we can access only
+	// public variables/methods. No access is given
 	// for private, protected and default.
-	
+
 	// IMPORTANT : We have to create an object of the same class
 	// whose properties we want to access in the other class
 
 	public static void main(String[] args) {
 
 		Car c = new Car();
-		c.name = "BMW"; // accessible as it is public 
+		c.name = "BMW"; // accessible as it is public
 //		c.price = 10000000; // NOT accessible as it is protected
 //		 c.color = "Blue"; // NOT accessible as it is default
 //		 c.mileage = 30; // NOT accessible as it is private
-		
-		c.start(); // accessible as it is public 
+
+		c.start(); // accessible as it is public
 		// c.stop(); // NOT accessible as it is protected
 		// c.billing(); // NOT accessible as it is default
 		// c.refuel(); // NOT accessible as it is private

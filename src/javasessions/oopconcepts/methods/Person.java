@@ -16,44 +16,44 @@ public class Person {
 		System.out.println("0 params");
 		return 100;
 	}
-	
+
 //	public int pop() {
 //		return 100;
 //	}
-	
+
 //	public Integer pop() { // This is again duplicate even though this method
 //		                   // is returning Integer wrapper class reference
 //		return 1000;
 //	}
-	
+
 	public Integer pop() { // This is overloading as the parameters are different
 	      return 1000;
 	}
 
-	
+
 //	public Integer pop(int a) { // This is overloading as the parameters are different
 //      return 1000;
 //    }
-	
+
 	public Integer pop(Integer a) { // This is again overloading
 		                            // as previous method is returning primitve int
-		                            // and this method is returning Integer class 
+		                            // and this method is returning Integer class
 		                            // reference(non-primitive)
 		  System.out.println("Byee");
 	      return 1000;
 	}
-	
+
 //	public int pop(int a) {
 //		System.out.println("Hiii");
 //		return 100;
 //	}
-	
+
 //	public int pop(long a) {
 //		System.out.println("Hello");
 //		return 1000;
 //	}
-	
-	
+
+
 	public void test(int a, int b) { // 2 params
 		System.out.println("0 params");
 	}
@@ -84,18 +84,18 @@ public class Person {
 	// All the above methods are declared with the same name
 	// but they have something different in their parameters
 	// This is called Method Overloading.
-	
+
 	// Overloading is also called compile time/static Polymorphism
 	// because when we write the method calls for overloaded methods
 	// the compiler knows which method to be called already
-	// by seeing the arguments in the calls and decides which 
+	// by seeing the arguments in the calls and decides which
 	// call to be mapped to which method definition before the actual call
 	// happens. Meaning, when JVM calls the compiler
 	// and compiles the .JAVA file to .class file
 	// it's already written in the class file which method to be called.
-	
+
 	// Compile time Polymorphism is slightly faster than run time Polymorphism.
-	
+
 	// Overloading is also called Static binding.
 
 	// Conditions for method overloading:
@@ -180,14 +180,14 @@ public class Person {
 	public void booking(String startPoint, String endPoint, String carType) {
 
 	}
-	
+
 	public void booking(String startPoint, String endPoint, String carType, int totalPersons) {
 
 	}
 	// Advantages of method overloading:
 	// Readability is better in overloaded methods with different features.
 //     Instead of writing all the features in the single method which will have
-//	   lots of lines of code. So, if there will be a bug related to 
+//	   lots of lines of code. So, if there will be a bug related to
 //	   pricing only then we have to find a lot in the single search method
 //	   But if we have written pricing feature in the overloaded search
 //	   method we will just to the method having pricing feature and fix that bug
@@ -213,21 +213,21 @@ public class Person {
 		           // In this call it will map to int pop(int a)
 		           // as 10 is in the int range.
 //		p.pop(863543647L); // Now, this call will be mapped to int pop(long a)
-		
+
 		// How to call the pop method having Integer class reference:
 //		Integer newNumber  = 10;
 //		p.pop(newNumber); // Now, this will map to int pop(Integer a) and is called
 		                  // call by reference.
-		
+
 		// Now, if we comment out int pop(int a) and int pop(long a) and call the pop
 		// method again with int parameter. Now, compiler will map that call
 		// to int pop(Integer a). This is called Auto-boxing.
-		
+
 		p.pop(10); // Byee
-		
+
 
 	}
-	
+
 	// NOTE:
 	// We could pass around 255 parameters in a method signature.
 

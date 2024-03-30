@@ -33,10 +33,10 @@ public class ConditionalOperators {
 					// intentionally passing true as the condition
 			System.out.println("Hiii"); // O/P: Hiii
 		}
-//		else { 
+//		else {
 //			System.out.println("Hello Bye"); This will be a dead code as the previous if condition will always be true
 		// and control will never come inside the else block
-//		} 
+//		}
 
 		boolean flag = false;
 		if (flag) { // In this method we are passing the variable itself as a condition.
@@ -89,11 +89,11 @@ public class ConditionalOperators {
 		} else {
 			System.out.println("Incorrect Marks");
 		}
-		
+
 		// if-if-if-if (Multiple ifs structure)
 		// Let's we have to implement a Cross-browser logic and execute the code block according
 		// to the browser being passed
-		String browser = "Chrome"; 
+		String browser = "Chrome";
 		if(browser.equals("Chrome")) {
 			System.out.println("Launch Chrome");
 		}
@@ -109,21 +109,21 @@ public class ConditionalOperators {
 		else {
 			System.out.println("Plz pass the right browser..."+browser);
 		}
-		
-		// O/p : 
+
+		// O/p :
 		// Launch Chrome
 		// Plz pass the right browser...Chrome
-		
+
 		// The above code written with multiple ifs is very in efficient
 		// as every if condition is going to be executed/checked
 		// irrespective of whether first condition was true or false and we got the browser as "Chrome"
 		// That is why the statement from else block is getting executed even if we
 		// got the browser as chrome. The above structure is also called independent ifs
 		// or parallel ifs
-		
+
 		// To fix the above problem we if-else-if structure like below:
-		
-		String browser1 = "Chrome"; 
+
+		String browser1 = "Chrome";
 		if(browser1.equals("Chrome")) {
 			System.out.println("Launch Chrome");
 		}
@@ -139,14 +139,14 @@ public class ConditionalOperators {
 		else {
 			System.out.println("Plz pass the right browser..."+browser);
 		}
-		
+
 		// In the above code if the condition is satisfied in the beginning itself
 		// the control will not go to other conditions. But if we found the browser
 		// in a condition which is not in the beginning rather at the bottom
 		// then again the control will go to every condition and it is checked.
 		// To solve this problem we have SWITCH-CASE Structure in JAVA.
-		
-		
+
+
 	}
 
 }

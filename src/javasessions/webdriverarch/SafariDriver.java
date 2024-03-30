@@ -4,7 +4,7 @@ public class SafariDriver implements WebDriver {
 	public SafariDriver() {
 		System.out.println("Launch Safari");
 	}
-	
+
 	@Override
 	public void findElement(String ele) {
 		System.out.println("find element: " + ele);

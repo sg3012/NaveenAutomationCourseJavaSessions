@@ -1,7 +1,7 @@
 package javasessions.fundamentals;
 
 public class DataTypes {
-	
+
 	public static void main(String[] args) {
 		// JAVA is a strictly typed language. Meaning. we have to define
 		// the data types of variables at the time of declaration only.
@@ -140,8 +140,8 @@ public class DataTypes {
 		                                  // So, double will only store max 15 digits after decimal
 		float ff = 9.45678901234567864008f;
 		System.out.println(ff); // 9.456789 (float will only store max 6 digits after decimal)
-		
-		
+
+
 
 	}
 

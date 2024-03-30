@@ -11,7 +11,7 @@ public class SwitchCaseStatement {
 	// checking each and every case. So, if there is
 	// correct/matching case at the bottom
 	// it will not check all previous cases. This is the major advantage
-	
+
 	// Switch case is only allowed for int, short, byte, string, char
 
 	public static void main(String[] args) {
@@ -150,7 +150,7 @@ public class SwitchCaseStatement {
 //			break;
 //			default:
 //				break;
-//		}                   // In this scenario we will go with the nested if-else conditions    
+//		}                   // In this scenario we will go with the nested if-else conditions
 
 		// If we have double values then we couldn't use switch case in those scenarios
 		double bmi = 12.33;
@@ -198,8 +198,8 @@ public class SwitchCaseStatement {
 //		default:
 //			break;
 //		}
-		
-		
+
+
 
 	}
 

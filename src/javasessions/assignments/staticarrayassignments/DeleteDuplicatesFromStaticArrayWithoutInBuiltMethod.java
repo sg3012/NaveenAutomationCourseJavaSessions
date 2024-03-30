@@ -1,8 +1,5 @@
 package javasessions.assignments.staticarrayassignments;
 
-import java.util.HashSet;
-import java.util.Set;
-
 public class DeleteDuplicatesFromStaticArrayWithoutInBuiltMethod {
 
 	// Given is an array and need to remove duplicate number {2,2,3,4,1,1,1,1}
@@ -13,8 +10,8 @@ public class DeleteDuplicatesFromStaticArrayWithoutInBuiltMethod {
 		// Method 1 : Without using in built function
 
 		System.out.println("Before removing duplicates");
-		for (int i = 0; i < arr.length; i++) {
-			System.out.println(arr[i]);
+		for (int element : arr) {
+			System.out.println(element);
 		}
 		System.out.println("After removing duplicates");
 		for (int i = 0; i < arr.length - 1; i++) {
@@ -25,9 +22,9 @@ public class DeleteDuplicatesFromStaticArrayWithoutInBuiltMethod {
 			}
 		}
 
-		for (int k = 0; k < arr.length; k++) {
-			if (arr[k] != -1) {
-				System.out.println(arr[k]);
+		for (int element : arr) {
+			if (element != -1) {
+				System.out.println(element);
 			}
 		}
 

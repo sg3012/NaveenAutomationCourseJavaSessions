@@ -11,7 +11,7 @@ public class ReverseStaticArrayUsingForEachLoop {
 		emp[2] = 20.67;
 		emp[3] = 'M';
 		emp[4] = true;
-		
+
 		int count = emp.length - 1;
 		for (Object e : emp) {
 			e = emp[count];

@@ -11,33 +11,33 @@ public class PrintSingleKeyWithMultipleValuesHashMap {
 
 // This class will implement a HashMap
 // Which can store multiple values for a single
-// Key and Print those values	
+// Key and Print those values
 
 //	Display all
 //	Role value
 //	with name
 //	key Name|Role:
-//		
+//
 //  Mayur| QA
-//  Mayur | lead 
-//	Siddharth|lead 
-//	Siddharth|lead 
-//	Siddharth|head 
-//	
+//  Mayur | lead
+//	Siddharth|lead
+//	Siddharth|lead
+//	Siddharth|head
+//
 //	OutPut:
 //	Mayur= {QA,lead}
 //	Siddharth= {lead,head}
 
 	public static void main(String[] args) {
-		Map<String, List<String>> mapOfNameAndRole = new HashMap<String, List<String>>();
+		Map<String, List<String>> mapOfNameAndRole = new HashMap<>();
 
 		// Create 1st List which will hold multiple values for Mayur:
-		List<String> listOfMayur = new ArrayList<String>();
+		List<String> listOfMayur = new ArrayList<>();
 		listOfMayur.add("QA");
 		listOfMayur.add("Lead");
 
 		// Create 2nd List which will hold multiple values for Siddharth:
-		List<String> listOfSiddharth = new ArrayList<String>();
+		List<String> listOfSiddharth = new ArrayList<>();
 		listOfSiddharth.add("Lead");
 		listOfSiddharth.add("Lead");
 		listOfSiddharth.add("Head");
@@ -53,7 +53,7 @@ public class PrintSingleKeyWithMultipleValuesHashMap {
 
 		for (Entry<String, List<String>> key : setOfMap) {
 			List<String> valueList = key.getValue();
-			
+
 			// Print and format O/P according to need:
 			System.out.print(key.getKey()+"=");
 			System.out.print("{");

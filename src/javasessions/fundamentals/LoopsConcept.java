@@ -37,7 +37,7 @@ public class LoopsConcept {
 //		}
 
 //		i=20;
-//		
+//
 //		while (i <= 10) {
 //			System.out.println(i); // Nothing will be printed on console
 //			i++;
@@ -129,7 +129,7 @@ public class LoopsConcept {
 
 		count = 0;
 //		while (count <= 100) {
-//			System.out.println(count); // O/P: 0123...25 25 runs 26 27 28....50 half century 51 52...100 century 
+//			System.out.println(count); // O/P: 0123...25 25 runs 26 27 28....50 half century 51 52...100 century
 //			if (count == 25) {
 //				System.out.println("25 runs");
 //			}
@@ -179,7 +179,7 @@ public class LoopsConcept {
 		System.out.println("---------------");
 //		for(int k=1; k<=10; k++) {
 //			System.out.println(k);
-//			
+//
 //		}
 
 		System.out.println("---------------");
@@ -219,13 +219,13 @@ public class LoopsConcept {
 //		System.out.println("---------------");
 //		for(;;) { // Infinite bye, if we don't write anything in the condition part
 		// inside a for loop then it will assume true
-//			System.out.println("bye"); 
+//			System.out.println("bye");
 //		}
 
 //		System.out.println("---------------");
 //		for(;true;) { // Infinite bye, if we don't write anything in the condition part
 //		              //inside a for loop then it will assume true
-//			System.out.println("bye"); 
+//			System.out.println("bye");
 //		}
 
 		System.out.println("---------------");
@@ -285,25 +285,25 @@ public class LoopsConcept {
 		// real time use cases of for loop:
 		// Important: We always use for loop in the cases where we know
 		// how many times we have to repeat a case / block of code.
-		
+
 		// to fetch values from a static array as the size of it is always fixed
-		
+
 		// fetch values from a drop-down having month values
-		
+
 		// Fetch values from a category drop-down which will mostly
 		// fixed number of categories for e.g. : Big Basket application
 		// only sells products belonging certain categories they will
 		// not be changed frequently
-		
+
 		// Fetching values from a country drop-down - the number of countries will be fixed most of the time
-		
+
 		// Airline Seat allocation on flight booking app - the seats on a flight will be fixed most of the time
-		
+
 		// Number of attempts user is given to enter a valid password. The password prompt
 		// will be seen on a net banking application most of the time and user
 		// will be given only 3 attempts to provide a right password
-		
-		// 
+
+		//
 
 	}
 

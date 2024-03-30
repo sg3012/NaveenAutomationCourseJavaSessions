@@ -25,7 +25,7 @@ public class Car {
 
 	// FOR METHODS:
 
-	// We should use static keyword for functions 
+	// We should use static keyword for functions
 	// whenever we want to create some Utilities
 	// having some Generic functions that have a common functionality
 	// in most of the cases. Then we define those methods as static
@@ -38,21 +38,21 @@ public class Car {
 	// If we think that all the static properties MUST not
 	// be changed later in the code by any developer
 	// then we should declare all of those properties as final also using final keyword.
-	
+
 	// All final properties should be declared with Upper case letters
-	
+
 	// In most cases static properties are declared as Final.
-	
+
 	// If we don't assign value to a final variable it will start giving error
 	// as Final variables must be assigned a value. We have to assign the value
 	// in the same line which they are declared.
-	
+
 	// DIFFERENCE between static and final is:
 	// static means a common property value for all objects, but they could be changed
 	// later in the code if user requires.
 	// Final mean a common value but it cannot be changed at all even
 	// if the user tries to change it
-	
+
 	String name;
 	String engineNumber;
 	String chasisNumber;
@@ -68,11 +68,11 @@ public class Car {
 	}
 
 	public static void main(String[] args) {
-		
+
 		// static int i = 10; // Error, local variables couldn't be made as static
 		                      // because they are not associated with class directly.
 		final int i =10; // this is possible. Local variables can be made as final
-		
+
 		Car c1 = new Car();
 		c1.name = "Audi A6";
 		c1.chasisNumber = "AAAJJ18728482";
@@ -89,7 +89,7 @@ public class Car {
 		c3.name = "BMW X7";
 		c3.chasisNumber = "BMWJJ18728482";
 //		c3.wheels = 4;
-		
+
 //		Car.WHEELS = 5; // The final field Car.WHEELS cannot be assigned
 
 		System.out.println(c3.name + " " + c3.chasisNumber + " " + Car.WHEELS); // BMW X7 BMWJJ18728482 4

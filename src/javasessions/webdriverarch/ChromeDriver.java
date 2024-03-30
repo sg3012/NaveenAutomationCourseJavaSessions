@@ -1,7 +1,7 @@
 package javasessions.webdriverarch;
 
 public class ChromeDriver implements WebDriver {
-	
+
 	public ChromeDriver() {
 		System.out.println("Launch chrome");
 	}

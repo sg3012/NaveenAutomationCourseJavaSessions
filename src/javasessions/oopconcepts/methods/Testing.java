@@ -53,7 +53,7 @@ public class Testing {
 			System.out.println("plz pass the right browser name..." + browserName);
 			return false;
 		}
-		
+
 		// The approach in the first launchbrowser method is better
 		// as we are maintaining only one flag variable and writing the return statement only one time
 	}
@@ -97,12 +97,12 @@ public class Testing {
 //		if(test.launchBrowser(" Chrome ")) {
 //			System.out.println("enter the url"); // launching the browser....chrome
 //                                                 // plz pass the right browser name...Chrome
-//                                                 // enter the url  
+//                                                 // enter the url
 //			                                     // Again incorrect O/P as user has passed correct
 //			                                     // browser name but with some blank spaces
 //			                                     // at the left and right ends of the browser name
 //			                                     // To fix this problem we will trim the left and right
-//			                                     // end spaces in the browserName parameter in 
+//			                                     // end spaces in the browserName parameter in
 //			                                     // the launchbrowser() method
 //		}
 
@@ -129,15 +129,15 @@ public class Testing {
 			System.out.println("enter the url"); // launching the browser....Opera
 													// plz pass the right browser name...Opera
 		}
-		
+
 		boolean f = test.launchBrowserTest("chrome");
 		System.out.println(f); // launching the browser....chrome
 		                       // true
-		
+
 		boolean f1 = test.launchBrowserTest("safari");
 		System.out.println(f); // launching the browser....safari
                                // true
-		
+
 		boolean f2 = test.launchBrowserTest("opera");
 		System.out.println(f); // plz pass the right browser name...opera
                                // false

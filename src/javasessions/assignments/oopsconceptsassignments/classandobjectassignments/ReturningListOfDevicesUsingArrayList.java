@@ -11,7 +11,7 @@ public class ReturningListOfDevicesUsingArrayList {
 
 	public ArrayList<String> getEmployeeDevices(String empName) {
 		empName = empName.trim().toLowerCase();
-		ArrayList<String> devicesList = new ArrayList<String>();
+		ArrayList<String> devicesList = new ArrayList<>();
 		switch (empName) {
 		case "shubham":
 			System.out.println("Getting employee devices list....");
@@ -37,7 +37,7 @@ public class ReturningListOfDevicesUsingArrayList {
 		default:
 			System.out.println("Getting employee devices list....");
 			// Macbook, Mouse, keyboard
-			
+
 			System.out.println("emp name "+empName+" is not found....");
 			break;
 		}
@@ -52,17 +52,17 @@ public class ReturningListOfDevicesUsingArrayList {
 		ArrayList<String> shubhamDevicesList = obj.getEmployeeDevices("Shubham");
 		System.out.println(shubhamDevicesList); // Getting the device info for:Shubham
 		                                        // [iPhone 14, Macbook pro, Airtel SIM, Apple Mouse]
-		System.out.println("total number of devices:" 
+		System.out.println("total number of devices:"
 		                                        + shubhamDevicesList.size()); // total number of devices: 4
-		
+
 		ArrayList<String> naveenDevicesList = obj.getEmployeeDevices("Naveen");
 		System.out.println(naveenDevicesList); // Getting the device info for:Naveen
                                                // emp name naveen is not found....
                                                // []
-		System.out.println("total number of devices:" 
+		System.out.println("total number of devices:"
 		                                        + naveenDevicesList.size()); // total number of devices: 0
-		
-		
+
+
 	}
 
 }

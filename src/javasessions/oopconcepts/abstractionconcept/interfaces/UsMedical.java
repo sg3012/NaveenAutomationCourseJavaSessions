@@ -54,15 +54,15 @@ public interface UsMedical extends WHO, UN { // We have use to use extends keywo
 	// by declaring them as private whereas the Abstraction helps in implementation
 	// hiding
 	// by providing / creating interfaces or Abstract classes.
-	
+
 	// Interfaces allow 100% abstraction up to JDK 1.8 i.e., having all methods without any implementation.
-	
-	// But interfaces can allow partial abstraction also JDK 1.8 onwards i.e., we 
+
+	// But interfaces can allow partial abstraction also JDK 1.8 onwards i.e., we
 	// can methods with body
 
 	// A single interface can have multiple parents
 //	public void physioServices() { // Error cannot define method body in an interface
-//		
+//
 //	}
 
 	// Below methods can also be called as method prototypes
@@ -180,7 +180,7 @@ public interface UsMedical extends WHO, UN { // We have use to use extends keywo
 
 	// Can I overload default method in an interface?
 	// Yes, like below:
-	
+
 	default void billing(int a) {
 		System.out.println("US -- billing");
 	}

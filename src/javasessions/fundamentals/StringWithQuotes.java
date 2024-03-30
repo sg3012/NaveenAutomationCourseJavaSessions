@@ -31,30 +31,30 @@ public class StringWithQuotes {
 								// correct values at run time.
 
 		// UC3: Appending strings while creating X-paths at run time in Selenium.
-		
-		String userName = "Shubham"; // this username is changing. We want to fetch it 
+
+		String userName = "Shubham"; // this username is changing. We want to fetch it
 		                            // and pass it to the desired xpath as shown below during
-		                            // run time 
-		String xpath = "//input[text()='userName']";   
+		                            // run time
+		String xpath = "//input[text()='userName']";
 
 		System.out.println(xpath); // O/P: //input[text()='userName']
 		                           // because userName will not be recognised as a variable
 		                           // and considered a string literal itself.
-		                           
+
 		xpath = "//input[text()='+userName+']"; // O/P: //input[text()='+userName+']
 		                                        // We also cannot append single quote directly as shown
 		                                        // in this line as plus will also start behaving like a string literal
-		
+
 		System.out.println(xpath);
-		
-		xpath = "//input[text()='"+userName+"']"; // O/P : //input[text()='Naveen'] 
-		                                          // Now, we will get Correct value for 
+
+		xpath = "//input[text()='"+userName+"']"; // O/P : //input[text()='Naveen']
+		                                          // Now, we will get Correct value for
 		                                          // xpath in the O/P if we pass the variable as shown here
 		                                          // in the xpath string.
-		
+
 		System.out.println(xpath);
-		
-		
+
+
 	}
 
 }

@@ -1,11 +1,11 @@
 package javasessions.webdriverarch;
 
 public class FirefoxDriver implements WebDriver {
-	
+
 	public FirefoxDriver() {
 		System.out.println("Launch Firefox");
 	}
-	
+
 	@Override
 	public void findElement(String ele) {
 		System.out.println("find element: " + ele);
