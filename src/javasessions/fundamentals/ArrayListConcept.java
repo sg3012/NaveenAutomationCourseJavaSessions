@@ -61,7 +61,7 @@ public class ArrayListConcept {
 		System.out.println(ar.get(8)); // 12.33
 //		System.out.println(ar.get(-1)); // Index Out Of Bounds Exception, not
 //		                                // Array index out of bounds exception as this is an array list.
-//		System.out.println(ar.get(9)); // Index Out Of Bounds Exception
+		System.out.println(ar.get(9)); // Index Out Of Bounds Exception
 
 		ar.add(1100);
 

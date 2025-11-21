@@ -91,9 +91,13 @@ public class TestCar {
 		            // is in parent class (Car) and all properties of parent are visible
 		            // in child class through inheritance. So, parent ref variable will be able
 		            // to call the start method but at run time JVM will decide to call
-		            // the BMW class start method because it is overridden in it. But
+		            // the BMW class start method because it is overridden in it and
+		            // the object is of child class. But
 		            // start is also related to Parent that is why parent ref variable
-		            // is able to call start.
+		            // is able to call start. This is a classic example of method
+		            // OVERRIDING where which method (parent or child) to be called
+		            // is decided at run time by seeing which class's object is actually
+		            // created parent or child
 
 		c1.stop();  // Reference type check will be passed because this method
                     // is in parent class (Car) and all properties of parent are visible

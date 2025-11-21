@@ -27,7 +27,7 @@ public class Browser {
 
 			// INTERVIEW: Where we will use these custom exceptions in the framework?
 			// Whenever we are testing negative test cases and the input
-			// is not matching with the expected value then we will throw these cusom
+			// is not matching with the expected value then we will throw these custom
 			// exceptions.
 		}
 

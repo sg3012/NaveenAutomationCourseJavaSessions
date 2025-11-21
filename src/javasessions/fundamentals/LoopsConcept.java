@@ -7,6 +7,9 @@ public class LoopsConcept {
 	}
 
 	public static void main(String[] args) {
+		// In JAVA Break statement will make the control/break
+		// only the inner loop not the outer one, if
+		// break is placed in inner loop.
 
 		// While loop:
 

@@ -168,7 +168,7 @@ public class Employee {
 				// is not a good practice. Because if there are multiple exceptions in the code
 				// then writing only Exception class as the parameter of the catch block makes
 				// the code less readable. So, we should write specific exception classes
-				// for better readability to catch all the exceptions that are coming.
+				// for better readability, to catch all the exceptions that are coming.
 			// }
 		catch(ArithmeticException e) {
 			System.out.println("AE is coming.....");

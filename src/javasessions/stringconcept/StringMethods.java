@@ -138,7 +138,7 @@ public class StringMethods {
 		    // dob2 = "01/01/1990" will create an entry in
 		    // SCP and dob2 will start pointing to it.
 		    // As both dob1 and dob2 point to different
-		    // memory addresses == comparison will result in FALSE
+		    // memory addresses and == comparison will result in FALSE
 
 
 		    String s1 = "JavaProgram";
