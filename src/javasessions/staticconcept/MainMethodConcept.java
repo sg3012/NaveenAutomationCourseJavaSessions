@@ -1,7 +1,7 @@
 package javasessions.staticconcept;
 
 public class MainMethodConcept {
-	// WHY MAIN METHOD IS STATIC IN NATURE?
+	//[IMPORTANT INTERVIEW] WHY MAIN METHOD IS STATIC IN NATURE?
 
 	// main method is static in nature because main is the point
 	// where the program execution is started and it is
@@ -11,14 +11,44 @@ public class MainMethodConcept {
 	// an object of the class first internally and then call the main.
 	// But in JAVA the authority of Object creation relies totally on the user/developer
 	// and it doesn't create Objects internally. That is why main
-	// method is static.
+	// method is static. 
+	// But why JVM shouldn't create any object of the class?
+	// Because JVM is a program that is purely related to start and continue 
+	// the execution of the JAVA code user has written not creation of objects.
+	// JAVA assumes that Objects are the real-world implementations of a class based on 
+	// different properties and those objects are created only once the 
+	// execution starts in real-time by end users. Because objects are related
+	// to the related to the real-world users JAVA puts this responsibility of 
+	// object creation in the hands of real-users only not JVM. That is why main is 
+	// static to immediately start the execution at main as soon as the class is loaded.
 
 	// main method is stored in the CMA or Meta Space.
 
-	// WHY MAIN METHOD IS VOID IN NATURE?
+	// [IMPORTANT INTERVIEW] WHY MAIN METHOD IS VOID IN NATURE?
 	// main method is designed to call the other methods which have actual business logics
 	// written in them. So, it behaves like a caller or driver method that doesn't
 	// contain any business logic in it. That is why main method is void in nature
+	
+	// [IMPORTANT INTERVIEW] WHY MAIN METHOD IS PUBLIC IN NATURE?
+	// Because main is called by a Program called JAVA launcher which is part
+	// of the JDK/JRE library you have installed in your system not your project's
+	// class in which you have created main method. And JAVA launcher needs
+	// a method called main to start the execution. Because launcher is
+	// outside of every project where main is defined main method must
+	// be PUBLIC.
+	
+	// [IMPORTANT INTERVIEW] WHAT IS THE MEANING OF STRING args{} in main ? WHY IT HAS 
+	// THIS TYPE OF ARGUMENT AND NOT OTHER TYPE?
+	// String args[] means main is taking string array type of arguments.
+	// When JVM/launcher activates it passes some command line arguments in
+	// the form of string array to the main method. That is why it takes
+	// array of string as an argument.
+	
+	// [INTERVIEW IMPORTANT] The JAVA launcher will always look for a method with following
+	// signature, access and non-access modifiers to start the execution:
+	// public static void main(String args[]) - if launcher
+	// doesn't find the exact same method it will never be able to start the program execution.
+	
 
 	// CAN WE OVERLOAD THE MAIN METHOD?
 	// Yes (SEE BELOW)
@@ -41,7 +71,7 @@ public class MainMethodConcept {
 
 	// This concludes that static methods can also be overloaded.
 
-	public static void main(String[] args) {
+	static void main(String[] args) {
 		System.out.println("this is the starting point"); // O/P this is the starting point
 		MainMethodConcept.main(10); // hi
 		                            // 10

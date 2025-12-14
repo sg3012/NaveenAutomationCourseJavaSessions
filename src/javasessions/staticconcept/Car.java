@@ -64,15 +64,20 @@ public class Car {
 	}
 
 	public void getUrl() {
-
+		
 	}
 
 	public static void main(String[] args) {
 
 		// static int i = 10; // Error, local variables couldn't be made as static
-		                      // because they are not associated with class directly.
+		                      // because they are associated with class directly.
+		                      // and they are stored at common memory allocation
+		                      // area as soon as the class is loaded. So, whenever
+		// sees a variable declared as static it checks under which scope it is declared
+		// directly. If it is directly under class scope then there will not be any error
+		// else if it is declared directly under a method scope then it will throw an error.
 		final int i =10; // this is possible. Local variables can be made as final
-
+		
 		Car c1 = new Car();
 		c1.name = "Audi A6";
 		c1.chasisNumber = "AAAJJ18728482";

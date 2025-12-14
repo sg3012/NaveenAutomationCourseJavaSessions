@@ -3,11 +3,43 @@ package javasessions.oopconcepts.encapsulationconcept;
 public class Employee {
 	// This class explains Encapsulation Concept:
 
-	// DEFINITION: Encapsulation means hiding the data members (variables +
-	// functions) of a class
-
-	// to be accessed directly from outside the class. We only provide access
-	// to private members through public layer ( or, we can say public methods ).
+	// DEFINITION AND CONCEPT BRIEF: 
+	// 1. Encapsulation means combining data and the functions that 
+	// work on that data into a single unit, like a class providing
+	// a controlled access and change rights over some private
+	// members of the class.
+	
+	// 2. Encapsulation means hiding the required data members or functions (variables +
+	// functions) of a class to be accessed directly from outside the class (private). 
+	// We only provide access to private members through public layer 
+	// ( or, we can say public methods ). 
+	
+	// 3. All the private member variables and member functions plus public functions 
+	// together make a cohesive unit (a unit consisting of same type of things. All these
+	// private functions, variables and public methods are of same type i.e., the class type). 
+	
+	// 4. The word Encapsulation comes from the English word CAPSULE where internal contents are
+	// protected. Now, to understand the concept of capsule take example of human cell
+	// which contains some important things like organelles which are not exposed 
+	// (private members) to external substances, some protein channels(public) at the cell's
+	// surface which allow some specific substances to pass through to the cell. So,
+	// think of these private organelles as private variables+functions of the class,
+	// public protein channels as public getter/setters to access and change private variables
+	// and the cell as the class or capsule itself. So, imagine class itself as 
+	// the actual container or capsule that provides a boundary full of getter/setters
+	// to access it's private members/contents. Getters and setters are on the surface
+	// boundary of capsule.
+	
+	// 5. Following are the members of the class in context of encapsulation:
+	//  --> Private member variables and methods
+	//  --> Public methods (getters and setters)
+	
+	// 6. During runtime or in actual implementation terms the class's objects
+	// are the actual capsule that contains their own copy of it's private 
+	// and public members of the class. It provides public getters and setters
+	// to access or change the private functions or variables of the class.
+	// The class is a logical thing that defines the rules for encapsulation
+	// i.e., what will be private and what public.
 
 	// In general, during encapsulation variables are declared private and methods
 	// as public
@@ -57,7 +89,15 @@ public class Employee {
 
 	// Now, user can leverage these public getter methods and call them outside the class
 	// to get the desired values they want without actually touching the respective
-	// private variables and methods. THIS IS HOW WE CAN SECURE THE DATA.
+	// private variables and methods. THIS IS HOW WE CAN SECURE THE DATA AND THIS
+	// IS THE REAL-TIME USE OF ENCAPSULATION/DATA MEMBERS HIDING where we are not
+	// allowing user to change/set the values of private data members anyhow 
+	// and only providing a way to only ACCESS/SEE their respective values. 
+	// Also, the main purpose of creating those private methods and
+	// changing implementing the logic to change the value(s) of private
+	// variables is restricting the user of that class to actually change
+	// the logic for changing the values of those private variables
+	// according to their use.
 
 	// So, We NEED NOT Provide getters and setters for every private variables of the class.
 
