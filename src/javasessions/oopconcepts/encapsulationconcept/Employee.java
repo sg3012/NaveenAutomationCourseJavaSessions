@@ -16,7 +16,9 @@ public class Employee {
 	
 	// 3. All the private member variables and member functions plus public functions 
 	// together make a cohesive unit (a unit consisting of same type of things. All these
-	// private functions, variables and public methods are of same type i.e., the class type). 
+	// private functions, variables and public methods are related to the same type i.e., the class type).
+	// For e.g. A BankAccount class should only contain members (variables + functions) related
+	// to a bank account only in real-world, no arbitrary member.
 	
 	// 4. The word Encapsulation comes from the English word CAPSULE where internal contents are
 	// protected. Now, to understand the concept of capsule take example of human cell
@@ -40,6 +42,23 @@ public class Employee {
 	// to access or change the private functions or variables of the class.
 	// The class is a logical thing that defines the rules for encapsulation
 	// i.e., what will be private and what public.
+	
+	// 7. [IMPORTANT INTERVIEW POINT]: An important purpose to do Encapsulation is keeping
+	// the implementation details for a method hidden from the external code(that is accessing
+	// the encapsulated class from outside). Meaning, if there are changes need to be done
+	// in any method's logic we will do it encapsulated class not in the external code remains unchanged
+	// and it's function is to just call the required method.
+	// This is the what is meant by single responsibility for any framework, where
+	// each class has it's own function.
+	// For e.g. if there is a BankAccount class that holds balance in some currency
+	// Now, if there is a change in currency conversion formula and then store the balance,
+	// user only has to change the currency conversion formula for the balance
+	
+	
+	
+	
+	
+	
 
 	// In general, during encapsulation variables are declared private and methods
 	// as public
