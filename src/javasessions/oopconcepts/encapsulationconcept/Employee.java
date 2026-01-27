@@ -43,7 +43,8 @@ public class Employee {
 	// The class is a logical thing that defines the rules for encapsulation
 	// i.e., what will be private and what public.
 	
-	// 7. [IMPORTANT INTERVIEW POINT]: An important purpose to do Encapsulation is keeping
+	// 7. [IMPORTANT INTERVIEW POINTS]: 
+	// a) An important purpose to do Encapsulation is keeping
 	// the implementation details for a method hidden from the external code(that is accessing
 	// the encapsulated class from outside). Meaning, if there are changes need to be done
 	// in any method's logic we will do it encapsulated class not in the external code remains unchanged
@@ -54,10 +55,22 @@ public class Employee {
 	// Now, if there is a change in currency conversion formula and then store the balance,
 	// user only has to change the currency conversion formula for the balance
 	
+	// b) [INTERVIEW QUESTION] When we are giving setters to access and change 
+	// the values of private variables to a class outside the current class where 
+	// encapsulation is implemented then what is the point of 
+	// encapsulation(creating variables as private) if we are anyhow able to change 
+	// their values? 
 	
-	
-	
-	
+	// Ans: Think about a BankAccount class, where there is a private variable
+	// balance and a setBalance() that takes the balance as parameter. Now,
+	// if we pass some invalid balance amount like -ve values while accessing
+	// this setter method then we can implement some checks inside this method
+	// that if the balance is invalid then print some message. Which would
+	// not be possible if we would have given direct access to the balance
+	// variable without making it private to any outside class. So, to prevent
+	// user from setting any garbage value to a class's variables (which is not
+	// meant to be the case in context of certain applications like Banking 
+	// applications) we make them private and give them edit access through setter methods.
 	
 
 	// In general, during encapsulation variables are declared private and methods
